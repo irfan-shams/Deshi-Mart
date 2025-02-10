@@ -13,6 +13,8 @@ class AppColors {
   static Color bluePrimaryColor = const Color(0xFF5383EC);
   static Color blueSecondaryColor = const Color(0xFF4A66AC);
 
+  static Color orangePrimaryColor = const Color(0xFFF6921E);
+
   static Color orangeBorderColor = const Color.fromRGBO(248, 164, 76, 0.7);
   static Color orangeColor = const Color.fromRGBO(248, 164, 76, 0.1);
 
