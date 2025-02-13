@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 
 class SignupController extends GetxController {
+  TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passController = TextEditingController();
   final FirebaseAuth auth = FirebaseAuth.instance;
@@ -11,10 +12,11 @@ class SignupController extends GetxController {
   void onSignUp() {
     // print("Email:" + emailController.text);
     // print("Password:" + passController.text);
-    createAccount(emailController.text, passController.text);
+    createAccount(
+        nameController.text, emailController.text, passController.text);
   }
 
-  Future<void> createAccount(String email, String password) async {
+  Future<void> createAccount(String name, String email, String password) async {
     try {
       await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: email, password: password);
