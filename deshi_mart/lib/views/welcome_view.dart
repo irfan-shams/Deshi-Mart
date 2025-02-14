@@ -1,4 +1,6 @@
 import 'package:deshi_mart/config/app_colors.dart';
+import 'package:deshi_mart/widgets/custom_divider.dart';
+import 'package:deshi_mart/widgets/icon_text_row.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeView extends StatelessWidget {
@@ -55,95 +57,46 @@ class WelcomeView extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Column(
                 children: [
-                  Container(
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/icon-1.png"),
-                        SizedBox(width: 20),
-                        Text(
-                          "Organic Groceries",
-                          style: TextStyle(
-                            color: AppColors.greyParagraphColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                  IconTextRow(
+                    imagePath: "assets/images/icon-1.png",
+                    text: "Organic Groceries",
+                    textColor: AppColors.greyParagraphColor,
                   ),
                   SizedBox(height: 4),
-                  Divider(
-                    thickness: 1,
+                  CustomDivider(
                     color: AppColors.greyParagraphColor,
                   ),
-                  Container(
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/icon-2.png"),
-                        SizedBox(width: 20),
-                        Text(
-                          "Whole foods and vegitable",
-                          style: TextStyle(
-                            color: AppColors.greyParagraphColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                  IconTextRow(
+                    imagePath: "assets/images/icon-2.png",
+                    text: "Dairy Products",
+                    textColor: AppColors.greyParagraphColor,
                   ),
                   SizedBox(height: 4),
-                  Divider(
-                    thickness: 1,
+                  CustomDivider(
                     color: AppColors.greyParagraphColor,
                   ),
-                  Container(
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/icon-3.png"),
-                        SizedBox(width: 20),
-                        Text(
-                          "Fast Delivery",
-                          style: TextStyle(
-                            color: AppColors.greyParagraphColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                  IconTextRow(
+                    imagePath: "assets/images/icon-3.png",
+                    text: "Fast Delivery",
+                    textColor: AppColors.greyParagraphColor,
                   ),
                   SizedBox(height: 4),
-                  Divider(
-                    thickness: 1,
+                  CustomDivider(
                     color: AppColors.greyParagraphColor,
                   ),
-                  Container(
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/icon-4.png"),
-                        SizedBox(width: 20),
-                        Text(
-                          "East Refund and return",
-                          style: TextStyle(
-                            color: AppColors.greyParagraphColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                  IconTextRow(
+                    imagePath: "assets/images/icon-4.png",
+                    text: "East Refund and return",
+                    textColor: AppColors.greyParagraphColor,
                   ),
                   SizedBox(height: 4),
-                  Divider(
-                    thickness: 1,
+                  CustomDivider(
                     color: AppColors.greyParagraphColor,
                   ),
-                  Container(
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/icon-5.png"),
-                        SizedBox(width: 20),
-                        Text(
-                          "Secure and safe",
-                          style: TextStyle(
-                            color: AppColors.greyParagraphColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                  IconTextRow(
+                    imagePath: "assets/images/icon-5.png",
+                    text: "Secure and safe",
+                    textColor: AppColors.greyParagraphColor,
                   ),
                 ],
               ),
